@@ -9,7 +9,6 @@ class ProductsPage extends React.Component {
     }
 
     renderProducts() {
-        console.log(this.props)
         return store.getState().products.map( p => {
             return <ProductCard key={p.id} product={p} linkToDetails={this.linkToDetails}/>
         })
@@ -17,8 +16,8 @@ class ProductsPage extends React.Component {
 
     render() {
         return (
-            <div className='ui card'>
-            <div>{this.renderProducts()}</div>
+            <div className='ui cards'>
+            {this.renderProducts()}
             </div>
         )
     }

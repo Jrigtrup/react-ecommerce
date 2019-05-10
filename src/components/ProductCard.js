@@ -13,8 +13,6 @@ class ProductCard extends React.Component {
     render() {
         const { title, description, price, img, id} = this.props.product
         return (
-            <div>
-
                 <div className="ui card">
                 <div className="image">
                 <img className="item_image" width={200} alt={description} src={img} />
@@ -27,7 +25,7 @@ class ProductCard extends React.Component {
                     </a>
                     <div className="meta">
                     <span className="date">
-                    <div className="item__price">{price}</div>
+                    <div className="item__price">${price}</div>
                     </span>
                     </div>
                     <div className="description">
@@ -36,9 +34,8 @@ class ProductCard extends React.Component {
                 </div>
                 <div className="extra content">
                     <a>
-                    <button className="ui button">Add to Cart</button>
+                    <button id='button' className="ui button">Add to Cart</button>
                     </a>
-                </div>
                 </div>
 
             {/* <div className="item_segment" onClick={() => this.props.linkToDetails(id)}> */}

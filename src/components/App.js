@@ -4,6 +4,7 @@ import ProductsPage from './ProductsPage'
 import ProductDetail from './ProductDetail'
 import Cart from './Cart'
 import store from '../store'
+import "../index.css"
 
 class App extends React.Component {
 
@@ -46,10 +47,7 @@ class App extends React.Component {
                             </a>
                         </div>
                         </div>
-                        <div className="ui segment">
                         <p></p>
-                        </div>
-
                     </div>
                     <div>
                         {/* <Link to='/'>
