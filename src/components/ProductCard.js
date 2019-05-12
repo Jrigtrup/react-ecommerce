@@ -34,7 +34,7 @@ class ProductCard extends React.Component {
                 </div>
                 <div className="extra content">
                     <a>
-                    <button id='button' className="ui button">Add to Cart</button>
+                    <button id='button' className="ui button" onClick={() => this.props.addToCart(title)}>Add to Cart</button>
                     </a>
                 </div>
 
